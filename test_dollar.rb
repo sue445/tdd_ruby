@@ -1,4 +1,6 @@
 require 'test/unit' 
+require_relative 'dollar'
+
 
 class DollarTest < Test::Unit::TestCase
 
