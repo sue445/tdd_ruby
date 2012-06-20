@@ -3,9 +3,8 @@ class Dollar
 		@amount = amount 	
 	end
 
-	def times(multipier)
-		@amount *=  multipier 
-		nil		
+	def times(multipiler)
+		Dollar.new(@amount * multipiler)		
 	end
 
 	attr_accessor :amount
