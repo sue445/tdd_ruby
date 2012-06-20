@@ -9,9 +9,6 @@ class Dollar < Money
 		Dollar.new(@amount * multipiler)		
 	end
 
-	def ==(other)
-		@amount == other.amount				
-	end
 end
 
 
