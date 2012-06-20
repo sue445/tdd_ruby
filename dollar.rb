@@ -12,7 +12,6 @@ class Dollar < Money
 	def ==(other)
 		@amount == other.amount				
 	end
-	attr_accessor :amount
 end
 
 
