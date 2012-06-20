@@ -1,6 +1,6 @@
 class Dollar
 	def initialize(amount)
-		@amount = 0	
+		@amount = 10	
 	end
 
 	def times(multipier)
