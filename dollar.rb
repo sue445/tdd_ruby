@@ -8,7 +8,7 @@ class Dollar
 	end
 
 	def ==(other)
-		true		
+		@amount == other.amount				
 	end
 	attr_accessor :amount
 end
