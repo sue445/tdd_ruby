@@ -1,4 +1,6 @@
-class Dollar
+require_relative 'money'
+
+class Dollar < Money
 	def initialize(amount)
 		@amount = amount 	
 	end
