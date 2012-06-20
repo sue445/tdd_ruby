@@ -7,6 +7,9 @@ class Dollar
 		Dollar.new(@amount * multipiler)		
 	end
 
+	def ==(other)
+		true		
+	end
 	attr_accessor :amount
 end
 

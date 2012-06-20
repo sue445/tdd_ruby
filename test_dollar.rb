@@ -12,4 +12,8 @@ class DollarTest < Test::Unit::TestCase
 		assert_equal(15, product.amount)
 	end
 
+	def test_equality
+		assert Dollar.new(5) == Dollar.new(5)
+		assert Dollar.new(5) != Dollar.new(6)
+	end
 end
