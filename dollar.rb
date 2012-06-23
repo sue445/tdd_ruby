@@ -2,7 +2,7 @@ require_relative 'money'
 
 class Dollar < Money
 	def times(multipiler)
-		Money.dollar(@amount * multipiler)		
+		Dollar.new(@amount * multipiler, currency)		
 	end
 
 end
