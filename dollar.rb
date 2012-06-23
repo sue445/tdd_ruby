@@ -7,7 +7,7 @@ class Dollar < Money
 	end
 
 	def times(multipiler)
-		Dollar.new(@amount * multipiler, nil)		
+		Money.dollar(@amount * multipiler)		
 	end
 
 end
