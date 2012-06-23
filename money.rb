@@ -13,4 +13,13 @@ class Money
 		Franc.new(amount)
 	end
 
+	def currency
+		@currency	
+	end
+
+	protected
+	def currency=(c)
+		@currency = c
+	end
+
 end
