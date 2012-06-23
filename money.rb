@@ -15,6 +15,10 @@ class Money
 		Money.new(@amount * multipiler, @currency)	
 	end
 
+	def +(addend)
+		Money.new(@amount + addend.amount, currency)
+	end
+
 	def Money.dollar(amount)
 		Money.new(amount, "USD")
 	end
