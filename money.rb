@@ -1,6 +1,12 @@
 class Money
 	attr_accessor :amount
-	
+	attr_reader :currency
+
+	def initialize(amount, currency)
+		@amount = amount 	
+		@currency = currency 
+	end
+
 	def ==(other)
 		@amount == other.amount && self.class == other.class				
 	end
@@ -12,14 +18,4 @@ class Money
 	def Money.franc(amount)
 		Franc.new(amount, "CHF")
 	end
-
-	def currency
-		@currency	
-	end
-
-	protected
-	def currency=(c)
-		@currency = c
-	end
-
 end
