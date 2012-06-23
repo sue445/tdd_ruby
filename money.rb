@@ -11,7 +11,8 @@ class Money
 		@amount == other.amount && @currency == other.currency
 	end
 
-	def times(amount)
+	def times(multipiler)
+		Money.new(@amount * multipiler, @currency)	
 	end
 
 	def Money.dollar(amount)
