@@ -9,4 +9,8 @@ class Money
 		Dollar.new(amount)
 	end
 
+	def Money.franc(amount)
+		Franc.new(amount)
+	end
+
 end
