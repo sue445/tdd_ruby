@@ -6,11 +6,11 @@ class Money
 	end
 
 	def Money.dollar(amount)
-		Dollar.new(amount)
+		Dollar.new(amount, nil)
 	end
 
 	def Money.franc(amount)
-		Franc.new(amount)
+		Franc.new(amount, nil)
 	end
 
 	def currency
