@@ -13,8 +13,6 @@ class MoneyTest < Test::Unit::TestCase
 	def test_equality
 		assert Money.dollar(5) == Money.dollar(5)
 		assert Money.dollar(5) != Money.dollar(6)
-		assert Money.franc(5) == Money.franc(5)
-		assert Money.franc(5) != Money.franc(6)
 		assert Money.franc(5) != Money.dollar(5)
 	end
 
@@ -29,8 +27,4 @@ class MoneyTest < Test::Unit::TestCase
 		assert_equal("CHF", Money.franc(1).currency);
 	end
 	
-	def test_different_class_equality
-		assert Money.new(10, "CHF") == Franc.new(10, "CHF")
-	end
-
 end
